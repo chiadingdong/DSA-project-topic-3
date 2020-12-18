@@ -1,0 +1,10 @@
+Philip,3.54,IT,Aerospace,NetworkandSecurity,Power,SemiConductor
+Marcus,2.38,Aerospace,NetworkandSecurity,IT,SemiConductor,Power
+Rina,2.42,NetworkandSecurity,Power,Aerospace,IT,SemiConductor
+Gina,2.43,SemiConductor,IT,Power,Aerospace,NetworkandSecurity
+Louis,3.58,IT,Aerospace,NetworkandSecurity,SemiConductor,Power
+Eugene,1.01,SemiConductor,NetworkandSecurity,Aerospace,Power,IT
+Sam,1.37,IT,Aerospace,NetworkandSecurity,SemiConductor,Power
+Kenny,3.46,Aerospace,Power,IT,SemiConductor,NetworkandSecurity
+Larry,1.63,Power,SemiConductor,Aerospace,NetworkandSecurity,IT
+Frank,3.81,IT,NetworkandSecurity,Aerospace,Power,SemiConductor
