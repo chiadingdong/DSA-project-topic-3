@@ -1,9 +1,3 @@
-/*
-DSA mini project topic 3
-Chia Dong (P1938113)
-Justin Tan  (P1923731)
-Yusuf  (P1923421)
-*/
 #pragma once
 #include<string>
 #include<vector>

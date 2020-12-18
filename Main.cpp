@@ -1,10 +1,3 @@
-/*
-DSA mini project topic 3
-Chia Dong (P1938113)
-Justin Tan  (P1923731)
-Yusuf  (P1923421)
-*/
-
 #include <fstream>
 #include <iostream>
 #include <list>
@@ -105,10 +98,10 @@ void method1() {
 	std::list<Student>::iterator it = Cohort.begin();
 	while (!Cohort.empty()) {
 		std::string studentChoice = it->getChoice(round);
-		if (SectorVacancies[studentChoice] != 0) {
+		if (SectorVacancies[studentChoice] > 0) {
 			std::cout << "\nRound " << round + 1 << ": " << it->getName() << " got allocated to " << studentChoice;
 			Cohort.erase(it++);
-			SectorVacancies[studentChoice]--;
+			--SectorVacancies[studentChoice];
 		}
 		else
 			++it;
@@ -159,7 +152,7 @@ void method2() {
 	}
 	int round = 0;
 	std::list<Student>::iterator it = Cohort.begin();
-	while (SectorVacancies[sectorToFill] != 0) {
+	while (SectorVacancies[sectorToFill] > 0) {
 		if (it == Cohort.end()) {
 			++round;
 			it = Cohort.begin();
@@ -167,12 +160,12 @@ void method2() {
 		if (it->getChoice(round) == sectorToFill) {
 			std::cout << "\nRound " << round + 1 << ": " << it->getName() << " got allocated to " << sectorToFill;
 			Cohort.erase(it++);
-			SectorVacancies[sectorToFill]--;
+			--SectorVacancies[sectorToFill];
 		}
 		else
 			++it;
 		
 	}
-	std::cout <<  '\n' << sectorToFill << " sector "  << " is filled\n\n";
+	std::cout <<  '\n' << sectorToFill << " sector "  << " is filled\n";
 	method1();
 }
